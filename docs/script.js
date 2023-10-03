@@ -100,6 +100,7 @@ document.getElementById('toggle_kdams').addEventListener('input', (e) => {
         .forEach((el) => (el.disabled = !checked));
 });
 document.addEventListener('DOMContentLoaded', () => {
+    queryBox.value || (queryBox.value = '234124');
     queryBox.dispatchEvent(new Event('input', {
         bubbles: true,
         cancelable: true,
